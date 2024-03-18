@@ -1,6 +1,7 @@
 # TEAM 1 KMS
 ![image](https://github.com/final-kms/main/assets/44054359/ee167743-9c9e-4470-9d94-56baa296ac30)
 
+
 ### MEMBER
 - 이경민 : PR(Project Manager)
 - 김민우 : TL(Tech Leader)
@@ -27,4 +28,4 @@
 - 규혁 : 팀 프로젝트 경험과 개발 이해하기, git 사용 이해하고 익숙해지기
 
 
-### 개발 목표
+### 개발 목표 
