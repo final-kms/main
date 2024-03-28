@@ -75,5 +75,9 @@ public class PostService {
     public List<Post> searchPost(String searchKeyword, Optional<User> user){
         return postRepository.findAllByTitleContaining(searchKeyword);
     }
+
+	public List<String> searchAllPost(Optional<User> myUserWithAuthorities) {
+		return postRepository.findAllTitles();
+	}
     
 }

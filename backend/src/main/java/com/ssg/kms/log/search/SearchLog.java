@@ -1,10 +1,9 @@
-package com.ssg.kms.log;
+package com.ssg.kms.log.search;
 
 import java.util.Date;
 
-import com.ssg.kms.wiki.Wiki;
+import com.ssg.kms.user.User;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,29 +18,25 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
 @Entity
-@Table(name = "WIKI_LOG")
+@Table(name = "SEARCH_LOG")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class WikiLog {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) 
-    private Long id;
+public class SearchLog {
 
-    @NotBlank
-    private String title;
-
-    @NotBlank
-    private String content;
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long search_log_id;
+	
+	@NotBlank
+	private String content;
+	
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     
-	@ManyToOne //(cascade = CascadeType.ALL)    
-	private Wiki wiki;
-
+    @ManyToOne
+    private User user;
+	
 }

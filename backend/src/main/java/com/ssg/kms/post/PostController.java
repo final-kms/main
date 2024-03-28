@@ -53,4 +53,9 @@ public class PostController {
     public ResponseEntity<List<Post>> searchPage(@PathVariable String searchKeyword) {        
         return ResponseEntity.ok(postService.searchPost(searchKeyword, userService.getMyUserWithAuthorities()));
     }
+	
+	@GetMapping("/search/all")
+    public ResponseEntity<List<String>> searchAllPost() {        
+        return ResponseEntity.ok(postService.searchAllPost(userService.getMyUserWithAuthorities()));
+    }
 }

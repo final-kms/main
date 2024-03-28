@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ssg.kms.like.wiki.WikiLikeRepository;
-import com.ssg.kms.log.WikiLogRepository;
-import com.ssg.kms.log.WikiLogService;
+import com.ssg.kms.log.wiki.WikiLogRepository;
+import com.ssg.kms.log.wiki.WikiLogService;
 import com.ssg.kms.post.Post;
 import com.ssg.kms.star.wiki.WikiStarRepository;
 import com.ssg.kms.user.User;

@@ -1,4 +1,4 @@
-package com.ssg.kms.log;
+package com.ssg.kms.log.wiki;
 
 import java.util.Date;
 import java.util.Optional;

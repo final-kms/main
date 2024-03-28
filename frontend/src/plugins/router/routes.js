@@ -46,6 +46,11 @@ export const routes = [
         path: '/search',
         component: () => import('@/pages/dashboard.vue'),
         props: true
+      },
+      {
+        path: '/read',
+        component: () => import('@/pages/dashboard.vue'),
+        props: true
       }
     ],
   },
