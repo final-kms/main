@@ -1,0 +1,9 @@
+export const EVENT_OPEN = "open";
+export const EVENT_CLOSE = "close";
+export const EVENT_MESSAGE = "message";
+export const EVENT_ERROR = "error";
+export const DEFAULT_RECONNECT_TIME = 2000;
+export const STATE_CONNECTING = 0;
+export const STATE_OPEN = 1;
+export const STATE_CLOSING = 2;
+export const STATE_CLOSED = 3;
